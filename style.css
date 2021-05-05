@@ -1,4 +1,3 @@
-@import url(./mobile.css);
 *{
     max-width: 1440px;
     margin: 0;
@@ -167,6 +166,9 @@ figure{
     top: 26px;
     left: 42px;
 }
+.mobile-gallery{
+    display: none;
+}
 .bags{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -233,4 +235,61 @@ footer{
     color: #919294;
     text-align: center;
     margin-top: 38px;
+}
+@media  screen and (max-width:500px){
+    *{
+        max-width: 375px;
+    }
+    .header{
+        max-width: 375px;
+        height: 90px;
+    }
+    .header__link>li, .header__btn{
+        display: none;
+    }
+    .header>a>h1{
+        width: 206px;
+        height: 52px;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-left: -23px;
+    }
+    .mobile-menu{
+        display: initial;
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+    .section-1{
+        display: none;
+    }
+    .section-2{
+        display:block;
+        height: 672px;
+    }
+    .section-2__container>h1{
+        display: block;
+    }
+    .section-2__container>p{
+        display: block;
+    }
+    .section-2__container{
+        display: block;
+    }
+    .gallery{
+    display: none;
+    }
+    .mobile-gallery{
+        display: flex;
+        flex-direction: column;
+        margin: 38px 17px 63px 17px;
+    }
+    .mobile-gallery__img{
+        margin-top: 23px;
+    }
+    .title, .telephone, .addres, .ticked{
+        width: 341px
+    }
+
 }
